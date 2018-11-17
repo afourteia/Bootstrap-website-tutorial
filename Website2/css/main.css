@@ -1,4 +1,8 @@
 
-bg-success {
+.bg-success {
     background: #f15025;
+}
+
+.col{
+    min-height: 40vh;
 }

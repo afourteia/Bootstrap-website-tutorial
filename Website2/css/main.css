@@ -6,3 +6,7 @@
 .col{
     min-height: 40vh;
 }
+
+.row {
+    background: #f15025;
+}

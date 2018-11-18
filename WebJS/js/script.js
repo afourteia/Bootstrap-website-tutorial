@@ -1,0 +1,1 @@
+const colorBtn = document.querySelector('.colorBtn')

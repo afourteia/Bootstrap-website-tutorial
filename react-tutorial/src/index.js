@@ -12,6 +12,7 @@ function Greeting() {
 
     return (
         <section>
+            {/* Must be an expression */}
             <button>{btn}</button>
             <h2>{`${name} ${lastname}`}</h2>
             <p>{12 + 34}</p>

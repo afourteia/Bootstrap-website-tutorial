@@ -6,20 +6,9 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: green;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
-}
-
-h1 {
-    color: blue;
-}
-
-.book {
-    background: gray;
-    border: 2px solid black;
-    padding: 1rem;
 }

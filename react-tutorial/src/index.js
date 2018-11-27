@@ -9,14 +9,12 @@ function Greeting() {
     return (
         <div>
             <h1>hello from React</h1>
-            <p>
-                lorem7
-                <ul>
-                    <li>
-                        <a href="#">home</a>
-                    </li>
-                </ul>
-            </p>
+            <p>lorem7</p>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+            </ul>
             <section className="book">
                 <Person />
                 <Message />
@@ -29,11 +27,9 @@ function Greeting() {
 }
 
 const Person = () => <h1>Abdul Fourteia</h1>;
-const Message = () => <p>This is my message</p>;
-
-function Book() {
-    return <div />;
-}
+const Message = () => (
+    <p style={{ backgroundColor: "white" }}>This is my message</p>
+);
 
 const CoverImage = () => (
     <img

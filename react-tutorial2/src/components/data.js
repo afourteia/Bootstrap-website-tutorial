@@ -22,6 +22,12 @@ const books = [
         img: "https://m.media-amazon.com/images/I/712nNwaEpzL._SX140_.jpg",
         title: "Harry Potter and the Order of the Phoenix",
         author: "J.K. ROWLING"
+    },
+    {
+        id: 5,
+        img: "https://m.media-amazon.com/images/I/712nNwaEpzL._SX140_.jpg",
+        title: "Harry Potter and the Order of the Phoenix",
+        author: "J.K. ROWLING"
     }
 ];
 

@@ -2,11 +2,14 @@ import React, { Component } from "react";
 
 export default class Book extends Component {
     render() {
-        const { book, author } = this.props.info;
+        const { img, title, author } = this.props.info;
         return (
-            <div>
-                <h3>Book: {book}</h3>
-                <h5>Author: {author}</h5>
+            <div className="book">
+                <img src={img} alt="book" width="300px" />
+                <div>
+                    <h4>Title: {title}</h4>
+                    <h6>By {author}</h6>
+                </div>
             </div>
         );
     }

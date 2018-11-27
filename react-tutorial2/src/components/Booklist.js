@@ -10,12 +10,24 @@ export default class Booklist extends Component {
             books: booksData
         };
     }
+
+    filterData = id => {
+        const sortedBooks = this.state.books.filter(item => item.id !== id);
+        this.setState({
+            books: sortedBooks
+        });
+    };
+
     render() {
         return (
             <div>
                 <h2>Best selling books</h2>
                 {this.state.books.map(item => (
-                    <Book key={item.id} info={item} />
+                    <Book
+                        key={item.id}
+                        info={item}
+                        deleteItem={this.filterData}
+                    />
                 ))}
             </div>
         );

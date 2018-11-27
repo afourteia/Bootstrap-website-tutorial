@@ -5,19 +5,23 @@ import ReactDom from "react-dom";
 // import "./index.css";
 
 // Use JXS sytax
-function Greeting() {
-    const btn = "search button";
-    const name = "john";
-    const lastname = "four";
-
+function People() {
     return (
         <section>
-            {/* Must be an expression */}
-            <button>{btn}</button>
-            <h2>{`${name} ${lastname}`}</h2>
-            <p>{12 + 34}</p>
+            <Person name="Abdul" job="Engineer" />
+            <Person name="Susan" job="technician" />
+            <Person name="Abdul" job="driver" />
         </section>
     );
 }
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+const Person = props => {
+    return (
+        <div>
+            <h1>{props.name}</h1>
+            <p>{props.job}</p>
+        </div>
+    );
+};
+
+ReactDom.render(<People />, document.getElementById("root"));
